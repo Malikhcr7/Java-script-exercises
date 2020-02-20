@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+
+
+
 
 <script>
-var name= prompt("Enter your first name");
+var noun= prompt("noun");
+var adjective= prompt("adjective");
+var verb= prompt("verb");
+var color=prompt("color");
+var adverb=prompt("adverb");
+//Comments here( All these variables will substitute each place with " + + " )
 
-alert("Welcome, " + name + "!");
-alert("Welcome, " + name + "!");
-alert("Welcome, " + name + "!");
-document.write(name.toUpperCase());
+var story = "Once, a hare saw a " + adjective + " tortoise walking slowly with a " + color + " shell on his back. The hare was very proud of himself and he asked the tortoise. “Shall we have a race? The tortoise agreed. They started the running race. The hare " + verb + " very fast. But the tortoise walked very slowly. The proud " + noun + " rested under a tree and soon slept off. But the tortoise walked very fast, " + adverb + " and steadily and reached the goal. At last, the tortoise won the race."
+document.write(story);
+//Comments here( The write method writes HTML expressions or JavaScript code to a document. )
+
+</script>
+
+
+
+</head>
+
+<body>
+<p id="demo"></p>
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction (4, 3);
 </script>
 
 </body>
 </html>
+
